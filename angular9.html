@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>AngularJS</title>
+	<link rel="stylesheet" type="text/css" href="">
+</head>
+<body style="padding: 10px;" ng-app="app" ng-controller="AddressCtrl">
+<div style="padding: 10px; font-weight: bold;">地址管理</div>
+<ul class="ui-list ui-list-link  ui-list-text ui-list-active ui-border-tb">
+	<li ng-repeat="a in list" class="ui-border-t" ng-class="{'selected':$first}">
+		<h4>{{$index+1+'.'+a.address}}</h4>
+	</li>
+</ul>
+</body>
+<script type="text/javascript" src="js/angular.min.js"></script>
+<script type="text/javascript" src="js/myctrl9.js"></script>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Angular js进阶</title>
+	<link rel="stylesheet" type="text/css" href="">
+</head>
+<body style="padding: 10px;" ng-app="">
+<div>
+	<input type="text" ng-model="uname" name="">
+	<h1 ng-clock class="ng-clock">{{uname}}</h1>
+	<div ng-bind="'用户名：'+uname"></div>
+	<div class="{{uname}}">{{uname}}</div>
+</div>
+</body>
+<script type="text/javascript" src="js/angular.min.js"></script>
+</html>
